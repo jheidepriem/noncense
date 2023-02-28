@@ -1,5 +1,5 @@
 export const fetchData = async () => {
-  return await fetch('http://localhost:3001/api/v1/ideas').then(response => {
+  return await fetch('https://openlibrary.org/subjects/collectionid:eaneschallenge.json?limit=100').then(response => {
     if (response.ok) {
       return response.json();
     } else {
