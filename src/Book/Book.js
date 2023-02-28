@@ -1,7 +1,7 @@
 import React from 'react'
 import './Book.css'
 
-const Book = ({ key, cover_id }) => {
+const Book = ({ cover_id }) => {
   return (
     <section className='book'>
       <img 
