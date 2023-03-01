@@ -1,8 +1,9 @@
-import React from 'react'
+import React, { NavLink } from 'react'
 import './Book.css'
 
-const Book = ({ cover_id }) => {
+const Book = ({ cover_id, id }) => {
   return (
+    <NavLink to={`/${id}`} key={id}>
     <section className='book'>
       <img 
       className="book-cover"
@@ -10,6 +11,7 @@ const Book = ({ cover_id }) => {
       alt="book cover"
       />
   </section>
+  </NavLink>
   )
 }
 
