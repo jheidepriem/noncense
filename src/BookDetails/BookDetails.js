@@ -1,14 +1,25 @@
-import React, { useEffect, useState } from 'react';
-import { fetchData } from '../Api';
-import '../BookDetails/BookDetails.css'
+import { useState } from "react";
+import "../BookDetails/BookDetails.css";
+import { useParams } from "react-router-dom";
+import Library from "../Library/Library";
 
 const BookDetails = () => {
-  const [bookDetailData, setBookDetailData] = useState([]);
+  const params = useParams()
+  
+  const [singleBook, setSingleBook] = useState({});
+  // const [loading, setLoading] = useState(false)
+  // const [error, setError] = useState('')
+console.log(params)
 
 
-useEffect(() => {
-  fetchData().then(data => bookDetailData(data)).catch(error => console.log(error, 'You Shall Not Pass!!!'))
-})
-}
+  return (
+    <main className="book-details-container">
+      <h1 className="book-title">Test Book Page </h1>
+      <Library >
 
-export default BookDetails
+      </Library>
+    </main>
+  )
+};
+
+export default BookDetails;
