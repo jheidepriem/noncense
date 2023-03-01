@@ -1,4 +1,5 @@
-import React, { useEffect, useState, Fragment, Route } from "react";
+import { useEffect, useState, Fragment } from "react";
+import { Route, Routes } from "react-router-dom";
 import { fetchData } from "../Api";
 import Library from "../Library/Library";
 import BookDetails from "../BookDetails/BookDetails";
@@ -6,32 +7,41 @@ import "../App/App.css";
 
 const App = () => {
   const [libraryData, setLibraryData] = useState([]);
-  const [singleBookData, setSingleBookData] = useState({});
-  // const [isLoading, setIsLoading] = useState(false);
+  const [Loading, setLoading] = useState(false);
+  // const [error, setError] = useState('')
 
   useEffect(() => {
-    // setIsLoading(true);
+    setLoading(true);
     fetchData()
-      .then((data) => setLibraryData(data.works))
+      .then((data) => {
+       setLibraryData(data.works);
+        setLoading(false);
+      })
       .catch((error) => console.log(error, "Error fetching library"));
   }, []);
 
   return (
     <main className="App">
-      <h1>Noncense</h1>
-      <Library allBooks={singleBookData} />
-      <Route
-        exact
-        path="/"
-        render={() => <Library allBooks={libraryData} />}
-      ></Route>
-      <Route
-        exact
-        path="/bookId"
-        render={({ match }) => {
-          return <BookDetails bookID={match.params.bookid} />;
-        }}
-      ></Route>
+      <Routes>
+        <Route
+         exact
+          path="/"
+          element={
+            <Fragment>
+              <h1>Noncense</h1>
+              {/* <Form/> */}
+              <Library allBooks={libraryData} />
+              {Loading && <h1>Loading...</h1>}
+            </Fragment>
+          }
+        />
+        <Route
+         exact
+          path="/book/:id"
+          element={ <BookDetails />
+          }
+        />
+      </Routes>
     </main>
   );
 };
