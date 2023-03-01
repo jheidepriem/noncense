@@ -1,5 +1,5 @@
-import { useEffect, useState, Fragment } from "react";
-import { Route, Routes } from "react-router-dom";
+import React, { useEffect, useState, Fragment } from "react";
+import { Route, Switch } from "react-router-dom";
 import { fetchData } from "../Api";
 import Library from "../Library/Library";
 import BookDetails from "../BookDetails/BookDetails";
@@ -22,26 +22,28 @@ const App = () => {
 
   return (
     <main className="App">
-      <Routes>
+      <Switch>
         <Route
          exact
           path="/"
-          element={
+          render={() => (
             <Fragment>
               <h1>Noncense</h1>
               {/* <Form/> */}
               <Library allBooks={libraryData} />
               {Loading && <h1>Loading...</h1>}
             </Fragment>
-          }
+          )}
         />
         <Route
          exact
           path="/book/:id"
-          element={ <BookDetails />
-          }
-        />
-      </Routes>
+          render={({ match }) => {
+            const findBook = libraryData.find((book) => book.ia === match.params.id)
+            return <BookDetails bookData={findBook} id={match.params.id}/>
+          }}
+       />
+      </Switch>
     </main>
   );
 };
