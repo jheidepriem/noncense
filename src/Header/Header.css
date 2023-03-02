@@ -1,4 +1,3 @@
-
 .header-title {
  
   letter-spacing: 7px;
@@ -6,10 +5,10 @@
   padding: 15px;
 }
 
-.logo-image {
+/* .logo-image {
   height: 17vh;
   width: 25vh;
-}
+} */
 
 .header-bar {
   background-color: #22333b;
@@ -21,4 +20,5 @@
   padding-left: 75px;
   padding-top: 50px;
   padding-bottom: 50px;
+  height: ;
 }
