@@ -21,6 +21,12 @@ const App = () => {
       .catch((error) => console.log(error, "Error fetching library"));
   }, []);
 
+  const filterBooks = (searchValue) => {
+    
+   const filteredData = libraryData.filter((book) => book.title.toLowerCase().includes(q.toLowerCase()))
+   setLibraryData(filteredData)
+  }
+
   return ( 
     <main className="App">
       <Switch>
