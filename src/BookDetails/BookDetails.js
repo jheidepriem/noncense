@@ -24,7 +24,7 @@ const BookDetails = ({ bookData }) => {
         {bookData.availability.is_lendable && (
           <Link
             to={{
-              pathname: `https://openlibrary.org${bookData.key}/Water_for_Elephants`,
+              pathname: `https://openlibrary.org${bookData.key}`,
             }}
             target="_blank"
           >
