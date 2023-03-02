@@ -1,9 +1,9 @@
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./Book.css";
 
 const Book = ({ cover_id, id }) => {
   return (
-    <NavLink to={`/book/${id}`} key={id}>
+    <Link to={`/book/${id}`} key={id}>
       <section className="book">
         <img
           className="book-cover"
@@ -11,7 +11,7 @@ const Book = ({ cover_id, id }) => {
           alt="book cover"
         />
       </section>
-    </NavLink>
+    </Link>
   );
 };
 
