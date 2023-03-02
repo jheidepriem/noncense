@@ -1,0 +1,24 @@
+
+.header-title {
+ 
+  letter-spacing: 7px;
+  font-size: 50px;
+  padding: 15px;
+}
+
+.logo-image {
+  height: 17vh;
+  width: 25vh;
+}
+
+.header-bar {
+  background-color: #22333b;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 73px;
+  padding-left: 75px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}

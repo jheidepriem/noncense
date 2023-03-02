@@ -1,8 +1,15 @@
 .books-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 27px;
+  height: 80%;
+  width: 80%;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 10px;
   justify-items: space-evenly;
   align-items: center;
   place-items: center;
- }
+  background-color: #fbfbf2;
+}
+
+.outside-container {
+  background-color: #22333b;
+}
