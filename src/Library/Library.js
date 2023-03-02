@@ -10,7 +10,11 @@ const Library = ({ allBooks }) => {
     );
   });
 
-  return <section className="books-container">{mappedBooks}</section>;
+  return (
+    <section className="outside-container">
+      <section className="books-container">{mappedBooks}</section>
+    </section>
+  );
 };
 
 export default Library;
