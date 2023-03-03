@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom";
+
 import "./Header.css";
 
 const Header = () => {
@@ -6,7 +7,7 @@ const Header = () => {
     <section className="header-bar">
       <section className="title-logo">
         <NavLink className="link-box" to="/">
-         <img className="logo" src="noncenseLogo2.png" alt="Non.cense Logo" />
+          <img className="logo" src="noncenseLogo2.png" alt="Non.cense Logo" />
         </NavLink>
       </section>
     </section>
