@@ -1,12 +1,10 @@
 import "../BookDetails/BookDetails.css";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-
-
-
+import PropTypes from "prop-types";
 
 const BookDetails = ({ bookData }) => {
-const [Loading, setLoading] = useState(false)
+  const [Loading, setLoading] = useState(false);
   return (
     <main className="book-details-container">
       {Loading && <h1>Loading...</h1>}
@@ -31,7 +29,7 @@ const [Loading, setLoading] = useState(false)
             }}
             target="_blank"
           >
-            <button>Checkout Book</button>
+            <button className="button-2">Checkout Book</button>
           </Link>
         )}
         <p>{`Subject: ${bookData.subject[0]}`}</p>
@@ -41,3 +39,7 @@ const [Loading, setLoading] = useState(false)
 };
 
 export default BookDetails;
+
+BookDetails.propTypes = {
+  bookData: PropTypes.object.isRequired,
+};
