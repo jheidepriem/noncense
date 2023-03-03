@@ -22,3 +22,7 @@
 .logo {
   width: 25%;
 }
+
+.link-box {
+  display: flex;
+}
