@@ -35,6 +35,7 @@ const App = () => {
 
   return (
     <main className="App">
+      
       <Switch>
         <Route exact path="/">
           <About />
@@ -44,8 +45,8 @@ const App = () => {
           path="/library"
           render={() => (
             <Fragment>
-              <Form filterBooks={filterBooks} />
               <Header />
+              <Form filterBooks={filterBooks} />
               <Library allBooks={filteredData} />
               {Loading && <h1>Loading...</h1>}
             </Fragment>
@@ -58,7 +59,10 @@ const App = () => {
             const findBook = libraryData.find(
               (book) => book.ia === match.params.id
             );
-            return <BookDetails bookData={findBook} id={match.params.id} />;
+            return <Fragment>
+              <Header/>
+              <BookDetails bookData={findBook} id={match.params.id} />
+              </Fragment>
           }}
         />
       </Switch>
