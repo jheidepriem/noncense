@@ -1,11 +1,15 @@
 import "../BookDetails/BookDetails.css";
+import { useState } from "react";
 import { Link } from "react-router-dom";
-import Header from "../Header/Header";
+
+
+
 
 const BookDetails = ({ bookData }) => {
+const [Loading, setLoading] = useState(false)
   return (
     <main className="book-details-container">
-      <Header />
+      {Loading && <h1>Loading...</h1>}
       <section className="book-cover-section">
         <img
           className="large-cover"
