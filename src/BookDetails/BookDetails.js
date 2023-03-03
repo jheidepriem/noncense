@@ -1,12 +1,9 @@
 import "../BookDetails/BookDetails.css";
-import Header from "../Header/Header";
 import { Link } from "react-router-dom";
 
 const BookDetails = ({ bookData }) => {
-  console.log(bookData);
   return (
     <main className="book-details-container">
-      <Header/>
       <section className="book-cover-section">
         <img
           className="large-cover"
