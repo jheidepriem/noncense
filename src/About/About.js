@@ -5,7 +5,7 @@ import "./About.css";
 const About = () => {
   return (
     <main className="about-me">
-      <Header/>
+      <Header />
       <section className="text-wrap">
         <h2 className="welcome-title">Welcome to Non.cense</h2>
         <section className="text-container">
