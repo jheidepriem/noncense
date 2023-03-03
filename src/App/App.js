@@ -6,7 +6,6 @@ import BookDetails from "../BookDetails/BookDetails";
 import Header from "../Header/Header";
 import Form from "../Form/Form";
 import About from "../About/About";
-
 import "../App/App.css";
 
 const App = () => {
@@ -35,7 +34,6 @@ const App = () => {
 
   return (
     <main className="App">
-      
       <Switch>
         <Route exact path="/">
           <About />
@@ -59,10 +57,12 @@ const App = () => {
             const findBook = libraryData.find(
               (book) => book.ia === match.params.id
             );
-            return <Fragment>
-              <Header/>
-              <BookDetails bookData={findBook} id={match.params.id} />
+            return (
+              <Fragment>
+                <Header />
+                <BookDetails bookData={findBook} id={match.params.id} />
               </Fragment>
+            );
           }}
         />
       </Switch>
