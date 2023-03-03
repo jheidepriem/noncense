@@ -1,17 +1,32 @@
 .book-cover-section {
-  padding: 20px;
-  background-color: #fbfbf2;
+  padding: 35px;
+  background-color: #f0ebd8;
 }
 
 .book-details {
-  background-color: #fbfbf2;
+ 
+  background-color: #f0ebd8;
 }
 
 .book-title {
-  background-color: #fbfbf2;
+  background-color: #f0ebd8;
   margin: 0;
 }
 
+.large-cover {
+  height: 50vh;
+  width: 22vw;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background: #fff;
+  transition: all .2s ease-in-out;
+  box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+}
+
+.large-cover:hover {
+  transform: scale(0.9);
+}
+
 html {
-  background-color: #fbfbf2;
+  background-color: #f0ebd8;
 }
