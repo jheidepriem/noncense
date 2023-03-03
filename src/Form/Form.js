@@ -19,7 +19,7 @@ const Form = ({ filterBooks }) => {
             onChange={(event) => setSearch(event.target.value)}
           />
         </form>
-      </section>
+     </section>
    
   );
 };
