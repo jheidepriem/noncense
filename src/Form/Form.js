@@ -10,17 +10,16 @@ const Form = ({ filterBooks }) => {
 
   return (
     <section className="search-form-container">
-        <form className="search-form">
-          <input
-            type="text"
-            placeholder="Search for books"
-            name="search"
-            value={search}
-            onChange={(event) => setSearch(event.target.value)}
-          />
-        </form>
-     </section>
-   
+      <form className="search-form">
+        <input
+          type="text"
+          placeholder="Search for books"
+          name="search"
+          value={search}
+          onChange={(event) => setSearch(event.target.value)}
+        />
+      </form>
+    </section>
   );
 };
 
