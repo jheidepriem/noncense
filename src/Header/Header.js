@@ -1,13 +1,13 @@
-import '../Header/Header.css'
+import "./Header.css";
 
 const Header = () => {
-return (
-    <header className="header-bar">
+  return (
+    <section className="header-bar">
       <section className="title-logo">
-        <h1 className="header-title">Non.cense</h1>
+        <img className="logo" src="noncenseLogo2.png" alt="Non.cense Logo" />
       </section>
-    </header>
+    </section>
   );
-}
+};
 
 export default Header;
