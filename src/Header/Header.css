@@ -1,24 +1,28 @@
-
-.header-title {
- 
-  letter-spacing: 7px;
+.title-logo {
+  height: 15vh;
+  display: flex;
+  background-color: #f0ebd8;
   font-size: 50px;
-  padding: 15px;
-}
-
-.logo-image {
-  height: 17vh;
-  width: 25vh;
+  padding: 10px;
+  justify-content: flex-start;
+  padding-left: 65px;
+  align-items: flex-end;
 }
 
 .header-bar {
-  background-color: #22333b;
+  height: 18vh;
+  width: 100%;
+  background-color: #f0ebd8;
   display: flex;
   align-content: center;
-  align-items: center;
+  align-items: flex-end;
   justify-content: space-between;
-  padding-right: 73px;
-  padding-left: 75px;
-  padding-top: 50px;
-  padding-bottom: 50px;
+}
+
+.logo {
+  width: 25%;
+}
+
+.link-box {
+  display: flex;
 }

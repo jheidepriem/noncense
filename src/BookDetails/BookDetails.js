@@ -1,12 +1,13 @@
 import "../BookDetails/BookDetails.css";
-import Header from "../Header/Header";
+import { useState } from "react";
 import { Link } from "react-router-dom";
+import PropTypes from "prop-types";
 
 const BookDetails = ({ bookData }) => {
-  console.log(bookData);
+  const [Loading, setLoading] = useState(false);
   return (
     <main className="book-details-container">
-      <Header/>
+      {Loading && <h1>Loading...</h1>}
       <section className="book-cover-section">
         <img
           className="large-cover"
@@ -24,11 +25,11 @@ const BookDetails = ({ bookData }) => {
         {bookData.availability.is_lendable && (
           <Link
             to={{
-              pathname: `https://openlibrary.org${bookData.key}/Water_for_Elephants`,
+              pathname: `https://openlibrary.org${bookData.key}`,
             }}
             target="_blank"
           >
-            <button>Checkout Book</button>
+            <button className="button-2">Checkout Book</button>
           </Link>
         )}
         <p>{`Subject: ${bookData.subject[0]}`}</p>
@@ -38,3 +39,7 @@ const BookDetails = ({ bookData }) => {
 };
 
 export default BookDetails;
+
+BookDetails.propTypes = {
+  bookData: PropTypes.object.isRequired,
+};

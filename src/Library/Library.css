@@ -7,9 +7,23 @@
   justify-items: space-evenly;
   align-items: center;
   place-items: center;
-  background-color: #fbfbf2;
+  background-color: #fdfdfb;
+  padding: 37px;
 }
 
 .outside-container {
-  background-color: #22333b;
+  height: 100%;
+  width: 100%;
+  background-color: #f0ebd8;
+  display: flex;
+  justify-content: center;
+}
+
+.border-container {
+  display: flex;
+  height: 90%;
+  width: 90%;
+  background-color: #908f84;
+  justify-content: center;
+  border-radius: 8px;
 }
