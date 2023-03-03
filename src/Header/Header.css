@@ -15,6 +15,10 @@
   background-color: #f0ebd8;
   display: flex;
   align-content: center;
-  align-items: center;
+  align-items: flex-end;
   justify-content: space-between;
+}
+
+.logo {
+  width: 25%;
 }
