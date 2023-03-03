@@ -1,3 +1,17 @@
 .book-cover-section {
-  margin-top: 5%;
+  padding: 20px;
+  background-color: #fbfbf2;
+}
+
+.book-details {
+  background-color: #fbfbf2;
+}
+
+.book-title {
+  background-color: #fbfbf2;
+  margin: 0;
+}
+
+html {
+  background-color: #fbfbf2;
 }
