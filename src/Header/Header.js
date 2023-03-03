@@ -1,10 +1,13 @@
+import { NavLink } from "react-router-dom";
 import "./Header.css";
 
 const Header = () => {
   return (
     <section className="header-bar">
       <section className="title-logo">
-        <img className="logo" src="noncenseLogo2.png" alt="Non.cense Logo" />
+        <NavLink className="link-box" to="/">
+         <img className="logo" src="noncenseLogo2.png" alt="Non.cense Logo" />
+        </NavLink>
       </section>
     </section>
   );
