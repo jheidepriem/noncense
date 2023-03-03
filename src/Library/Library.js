@@ -1,4 +1,5 @@
 import Book from "../Book/Book";
+import PropTypes from "prop-types"
 import "./Library.css";
 
 const Library = ({ allBooks }) => {
@@ -20,3 +21,7 @@ const Library = ({ allBooks }) => {
 };
 
 export default Library;
+
+Library.propTypes = {
+  allBooks: PropTypes.array.isRequired
+};
