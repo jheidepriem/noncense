@@ -1,5 +1,6 @@
 .about-me {
   color: black;
+  background-color: #fdfdfb;
 }
 
 .text-container {
@@ -9,6 +10,35 @@
 }
 
 .map-image {
-  height: 20vh;
-  width: 30vw;
+  width: 45%;
+}
+
+.button {
+  width: 18%;
+  height: 12%;
+}
+
+.button:hover,
+.button:focus {
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+  color: rgba(0, 0, 0, 0.65);
+}
+
+.button:hover {
+  transform: translateY(-1px);
+}
+
+.button:active {
+  background-color: #F0F0F1;
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+  color: rgba(0, 0, 0, 0.65);
+  transform: translateY(0);
+}
+
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 15px;
 }
