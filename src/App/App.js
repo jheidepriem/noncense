@@ -44,8 +44,8 @@ const App = () => {
           path="/library"
           render={() => (
             <Fragment>
-              <Header />
               <Form filterBooks={filterBooks} />
+              <Header />
               <Library allBooks={filteredData} />
               {Loading && <h1>Loading...</h1>}
             </Fragment>
