@@ -12,7 +12,9 @@ const Library = ({ allBooks }) => {
 
   return (
     <section className="outside-container">
+      <section className="border-container">
       <section className="books-container">{mappedBooks}</section>
+      </section>
     </section>
   );
 };
