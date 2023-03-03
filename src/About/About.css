@@ -1,12 +1,28 @@
 .about-me {
-  color: black;
-  background-color: #fdfdfb;
+  height: 100vh;
+  display: flex;
+  color: #908f84;
+  background-color: #f0ebd8;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.about-text {
+  columns: #908f84;
+  width: 65%;
+}
+.about-text-2 {
+  color: #908f84;
+  width: 65%;
 }
 
 .text-container {
   display: flex;
-  width: 100vw;
+  width: 100%;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .map-image {
@@ -14,31 +30,55 @@
 }
 
 .button {
-  width: 18%;
-  height: 12%;
+  background-color: #e1ecf4;
+  border-radius: 3px;
+  border: 1px solid #7aa7c7;
+  box-shadow: rgba(255, 255, 255, 0.7) 0 1px 0 0 inset;
+  box-sizing: border-box;
+  color: #39739d;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system, system-ui, "Segoe UI", "Liberation Sans",
+    sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.15385;
+  margin: 0;
+  outline: none;
+  padding: 8px 0.8em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  white-space: nowrap;
+  padding-bottom: 5px;
 }
 
 .button:hover,
 .button:focus {
-  border-color: rgba(0, 0, 0, 0.15);
-  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
-  color: rgba(0, 0, 0, 0.65);
+  background-color: #b3d3ea;
+  color: #2c5777;
 }
 
-.button:hover {
-  transform: translateY(-1px);
+.button:focus {
+  box-shadow: 0 0 0 4px rgba(0, 149, 255, 0.15);
 }
 
 .button:active {
-  background-color: #F0F0F1;
-  border-color: rgba(0, 0, 0, 0.15);
-  box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
-  color: rgba(0, 0, 0, 0.65);
-  transform: translateY(0);
+  background-color: #a0c7e4;
+  box-shadow: none;
+  color: #2c5777;
 }
 
-.button-container {
+.text-wrap {
   display: flex;
-  justify-content: flex-end;
-  padding-right: 15px;
+  border: 2px solid #908f84;
+  border-radius: 8px;
+  width: 66%;
+  background-color: #fdfdfb;
+  flex-direction: column;
+  justify-content: center;
 }
