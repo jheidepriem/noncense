@@ -3,14 +3,16 @@ import { Route, Switch } from "react-router-dom";
 import { fetchData } from "../Api";
 import Library from "../Library/Library";
 import BookDetails from "../BookDetails/BookDetails";
-import Form from "../Form/Form";
 import Header from "../Header/Header";
+import Form from "../Form/Form";
+import About from "../About/About";
+
 import "../App/App.css";
 
 const App = () => {
   const [libraryData, setLibraryData] = useState([]);
   const [Loading, setLoading] = useState(false);
-  const [filteredData, setFilteredData] = useState([])
+  const [filteredData, setFilteredData] = useState([]);
   // const [error, setError] = useState('')
 
   useEffect(() => {
@@ -25,20 +27,25 @@ const App = () => {
   }, []);
 
   const filterBooks = (searchValue) => {
-    const filteredData = libraryData.filter((book) => book.title.toLowerCase().includes(searchValue.toLowerCase()))
-    setFilteredData(filteredData)
-  }
+    const filteredData = libraryData.filter((book) =>
+      book.title.toLowerCase().includes(searchValue.toLowerCase())
+    );
+    setFilteredData(filteredData);
+  };
 
-  return ( 
+  return (
     <main className="App">
       <Switch>
+        <Route exact path="/">
+          <About />
+        </Route>
         <Route
           exact
-          path="/"
+          path="/library"
           render={() => (
             <Fragment>
               <Header />
-              <Form filterBooks={filterBooks} /> 
+              <Form filterBooks={filterBooks} />
               <Library allBooks={filteredData} />
               {Loading && <h1>Loading...</h1>}
             </Fragment>
