@@ -1,0 +1,14 @@
+.about-me {
+  color: black;
+}
+
+.text-container {
+  display: flex;
+  width: 100vw;
+  flex-direction: column;
+}
+
+.map-image {
+  height: 20vh;
+  width: 30vw;
+}
