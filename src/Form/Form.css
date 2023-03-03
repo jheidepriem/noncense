@@ -1,26 +1,14 @@
 .search-form {
-  display: flex;
   border-radius: 8px;
   background-color: #f0ebd8;
-  justify-content: flex-end;
 }
-
 
 .search-form-container {
   background-color: #f0ebd8;
   width: 100%;
-  padding-right: 64px;
   display: flex;
   justify-content: flex-end;
   padding-bottom: 15px;
 }
 
-.logo {
-  height: 8vh;
-  width: 12vw;
-}
 
-input {
-  border: none;
-  background-color: #fffcf2;
-}
