@@ -1,11 +1,11 @@
 .search-form {
   border-radius: 8px;
   width: 25vw;
-  background-color: #f0ebd8;
+  background-color: #cfcfc9;
 }
 
 .search-form-container {
-  background-color: #f0ebd8;
+  background-color: #cfcfc9;
   width: 100%;
   display: flex;
   justify-content: flex-end;

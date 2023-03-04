@@ -1,7 +1,7 @@
 .title-logo {
   height: 15vh;
   display: flex;
-  background-color: #f0ebd8;
+  background-color: #cfcfc9;
   font-size: 50px;
   padding: 10px;
   justify-content: flex-start;
@@ -12,7 +12,7 @@
 .header-bar {
   height: 18vh;
   width: 100%;
-  background-color: #f0ebd8;
+  background-color: #cfcfc9;
   display: flex;
   align-content: center;
   align-items: flex-end;
