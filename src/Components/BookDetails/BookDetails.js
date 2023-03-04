@@ -1,7 +1,7 @@
-import "../BookDetails/BookDetails.css";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
+import "../BookDetails/BookDetails.css";
 
 const BookDetails = ({ bookData }) => {
   const [Loading, setLoading] = useState(false);
