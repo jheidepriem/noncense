@@ -16,6 +16,8 @@ describe('about page', () => {
   it('should navigate to the library on button click', () => {
     cy.get('button').click()
     cy.url('http://localhost:3000/library')
+    
   })
+
 
 })
