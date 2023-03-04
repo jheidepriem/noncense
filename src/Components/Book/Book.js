@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import "./Book.css";
+import "../Book/Book.css";
 
 const Book = ({ cover_id, id }) => {
   return (

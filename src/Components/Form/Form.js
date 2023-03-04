@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import PropTypes from "prop-types"
+import PropTypes from "prop-types";
 import "../Form/Form.css";
 
 const Form = ({ filterBooks }) => {
@@ -27,5 +27,5 @@ const Form = ({ filterBooks }) => {
 export default Form;
 
 Form.propTypes = {
-  filterBooks: PropTypes.array.isRequired
+  filterBooks: PropTypes.array.isRequired,
 };
