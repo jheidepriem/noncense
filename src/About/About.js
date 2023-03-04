@@ -17,7 +17,6 @@ const About = () => {
             color, sexual content, stories of religious minorities and themes of
             civil rights or activism.
           </p>
-
           <img className="map-image" src="map.png" alt="Map image" />
           <p className="about-text-2">
             Non.cense provides a library of the most banned books in the state
