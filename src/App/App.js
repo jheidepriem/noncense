@@ -65,6 +65,9 @@ const App = () => {
             );
           }}
         />
+         {/* <Route path="*">
+            <ErrorPage />
+          </Route> */}
       </Switch>
     </main>
   );
