@@ -1,9 +1,9 @@
 import React, { useEffect, useState, Fragment } from "react";
 import { Route, Switch } from "react-router-dom";
-import { fetchData } from "../Api";
+import { fetchData } from "../../Api";
 import Library from "../Library/Library";
 import BookDetails from "../BookDetails/BookDetails";
-import Error from '../Components/Error/Error'
+import Error from "../Error/Error";
 import Header from "../Header/Header";
 import Form from "../Form/Form";
 import About from "../About/About";

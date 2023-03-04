@@ -1,4 +1,4 @@
-import Error from './Error.css'
+import Error from "../Error/Error.css"
 import { Link } from "react-router-dom";
 
 const ErrorPage = () => {
@@ -13,4 +13,4 @@ const ErrorPage = () => {
   );
 };
 
-export default ErrorPage;
+export default Error;

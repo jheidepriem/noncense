@@ -1,6 +1,6 @@
 import Book from "../Book/Book";
 import PropTypes from "prop-types"
-import "./Library.css";
+import "../Library/Library.css";
 
 const Library = ({ allBooks }) => {
   const mappedBooks = allBooks.map((book) => {
