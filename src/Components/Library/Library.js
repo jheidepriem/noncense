@@ -1,5 +1,5 @@
 import Book from "../Book/Book";
-import PropTypes from "prop-types"
+import PropTypes from "prop-types";
 import "../Library/Library.css";
 
 const Library = ({ allBooks }) => {
@@ -14,7 +14,7 @@ const Library = ({ allBooks }) => {
   return (
     <section className="outside-container">
       <section className="border-container">
-      <section className="books-container">{mappedBooks}</section>
+        <section className="books-container">{mappedBooks}</section>
       </section>
     </section>
   );
@@ -23,5 +23,5 @@ const Library = ({ allBooks }) => {
 export default Library;
 
 Library.propTypes = {
-  allBooks: PropTypes.array.isRequired
+  allBooks: PropTypes.array.isRequired,
 };

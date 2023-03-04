@@ -1,15 +1,13 @@
 .search-form {
+  background-color: #cfcfc9;
   border-radius: 8px;
   width: 25vw;
-  background-color: #cfcfc9;
 }
 
 .search-form-container {
   background-color: #cfcfc9;
-  width: 100%;
   display: flex;
   justify-content: flex-end;
   padding-bottom: 15px;
+  width: 100%;
 }
-
-
