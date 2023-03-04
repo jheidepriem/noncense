@@ -1,0 +1,29 @@
+.books-container {
+  display: grid;
+  height: 80%;
+  width: 80%;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 10px;
+  justify-items: space-evenly;
+  align-items: center;
+  place-items: center;
+  background-color: #fdfdfb;
+  padding: 37px;
+}
+
+.outside-container {
+  height: 100%;
+  width: 100%;
+  background-color: #f0ebd8;
+  display: flex;
+  justify-content: center;
+}
+
+.border-container {
+  display: flex;
+  height: 90%;
+  width: 90%;
+  background-color: #908f84;
+  justify-content: center;
+  border-radius: 8px;
+}

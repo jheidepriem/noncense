@@ -1,0 +1,13 @@
+.book-cover {
+  border-radius:8px;
+  border: 1px solid #ccc;
+  background: #fff;
+  transition: all .2s ease-in-out;
+  height: 29%;
+  width: 85%;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.book-cover:hover {
+  transform: scale(0.9);
+}
