@@ -6,7 +6,7 @@ const Header = () => {
     <section className="header-bar">
       <section className="title-logo">
         <Link className="link-box" to="/">
-          <img className="logo" src="noncenseLogo2.png" alt="Non.cense Logo" />
+          <img className="logo" src="logo.png" alt="Logo link" />
         </Link>
       </section>
     </section>
