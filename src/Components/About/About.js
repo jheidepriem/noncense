@@ -5,7 +5,7 @@ const About = () => {
   return (
     <main className="about-me">
       <section className="text-wrap">
-        <h2 className="welcome-title">Welcome to Non.cense</h2>
+        <h2 className="welcome-title">WELCOME TO NON.CENSE</h2>
         <section className="text-container">
           <p className="about-text">
             According to Pen.org, between July1, 2021 - June 30, 2022, the state

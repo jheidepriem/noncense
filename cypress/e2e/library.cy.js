@@ -18,6 +18,7 @@ describe("about page", () => {
 
   it("should filter books on when text is typed into form", () => {
     cy.get("input").type("lolita").should("have.value", "lolita");
+    cy.get(".book-cover").should("be.visible");
   });
 
   it("should go to book details page when book is clicked", () => {
@@ -26,5 +27,6 @@ describe("about page", () => {
       "include",
       "lolita0000unse_x3y3"
     );
+    cy.get(".large-cover").should("be.visible");
   });
 });
