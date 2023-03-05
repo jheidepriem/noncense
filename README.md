@@ -59,7 +59,9 @@ This project is designed to allow users to view the most banned books in Texas, 
 - Multiple views handled by Router
 - Be deployed using Heroku, Surge, or any other similar service
 
-## Preview )
+## Preview 
+![library](https://user-images.githubusercontent.com/108428451/222943398-f7c7083a-bdf1-4def-900a-595396e56742.gif)
+![search](https://user-images.githubusercontent.com/108428451/222943404-3b2ed2ab-2e54-41c2-a9c8-1d2378c61270.gif)
 
 
 ## WinsAndChallenges
