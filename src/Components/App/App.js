@@ -12,7 +12,7 @@ import "../App/App.css";
 const App = () => {
   const [libraryData, setLibraryData] = useState([]);
   const [Loading, setLoading] = useState(false);
-  const [error, setError] = useState('')
+  const [error, setError] = useState("");
   const [filteredData, setFilteredData] = useState([]);
 
   useEffect(() => {
@@ -48,7 +48,7 @@ const App = () => {
               <Form filterBooks={filterBooks} />
               <Library allBooks={filteredData} />
               {Loading && <h1>Loading...</h1>}
-              {error && <Error/>}
+              {error && <Error />}
             </Fragment>
           )}
         />
@@ -64,7 +64,7 @@ const App = () => {
                 <Header />
                 <BookDetails bookData={findBook} id={match.params.id} />
                 {Loading && <h1>Loading...</h1>}
-                {error && <Error/> }
+                {error && <Error />}
               </Fragment>
             );
           }}
