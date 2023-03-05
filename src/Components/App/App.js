@@ -12,6 +12,7 @@ import "../App/App.css";
 const App = () => {
   const [libraryData, setLibraryData] = useState([]);
   const [Loading, setLoading] = useState(false);
+  const [error, setError] = useState('')
   const [filteredData, setFilteredData] = useState([]);
 
   useEffect(() => {
@@ -22,7 +23,7 @@ const App = () => {
         setFilteredData(data.works);
         setLoading(false);
       })
-      .catch((error) => console.log(error, "Error fetching library"));
+      .catch((error) => setError(error));
   }, []);
 
   const filterBooks = (searchValue) => {
@@ -47,6 +48,7 @@ const App = () => {
               <Form filterBooks={filterBooks} />
               <Library allBooks={filteredData} />
               {Loading && <h1>Loading...</h1>}
+              {error && <Error/>}
             </Fragment>
           )}
         />
