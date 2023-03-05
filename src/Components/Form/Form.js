@@ -27,5 +27,5 @@ const Form = ({ filterBooks }) => {
 export default Form;
 
 Form.propTypes = {
-  filterBooks: PropTypes.array.isRequired,
+  filterBooks: PropTypes.func.isRequired,
 };
