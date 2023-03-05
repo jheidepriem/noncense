@@ -1,70 +1,93 @@
-# Getting Started with Create React App
+# NON.CENSE 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[Non.cense](https://noncense.vercel.app/) is an app that allows users to checkout the top banned books in Texas. Let's face it, banning books is an exercise in stupidity and Non.cense seeks to make these books available to anyone with access to the internet. 
 
-## Available Scripts
 
-In the project directory, you can run:
 
-### `npm start`
+## Table of Contents
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+  - [Setup](#setup)
+  - [Technologies](#technologies)
+  - [Project Spec](#project-spec)
+  - [Abstract](#abstract)
+  - [Learning Goals](#learning-goals)
+  - [Preview](#preview)
+  - [WinsAndChallenges](#winsandchallenges)
+  - [Authors](#Authors)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Setup
+  - Clone down this repo here
+  - On the command line, type: $ npm intall
+  - On the command line, type: $ npm start
+  - Open http://localhost:3000 to view it in your browser.
+  - The page will reload when you make changes.
+  - You may also see any lint errors in the console.
 
-### `npm test`
+## Technologies
+  - Javascript
+  - CSS / HTML
+  - VSCode
+  - Git Version Control / GitHub
+  - Webpack node package
+  - React
+  - Router
+  - Google Chrome or Web Browser of User's Choice
+  - Mac OS Terminal/Command Line
+  - Cypress
+  - Node.js
+  
+## Project Spec
+[Click here](https://frontend.turing.edu/projects/module-3/showcase.html)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Abstract 
 
-### `npm run build`
+This project is designed to allow users to view the most banned books in Texas, view book details, and click a link that takes them to an open source library where digital and audio versions are available to borrow for free. The main screen gives users an explanation of the site. Users can navigate to a library page and view all available banned books. Once a user clicks on a particular book, they can decide if they want to borrow a book! 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Learning Goals
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Use the technology you’ve been working with over the course of the module to demonstrate mastery of the following:
+    - React
+    - Router
+    - Asynchronous JavaScript
+    - End to end testing with Cypress
+    - Create personas and user stories to describe your target audience.
+- Work within constraints to deliver a product for your niche audience, which helps solve a problem unique to them.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Applications must have the following core functionality:
+- Display the data from the API in a way that applies directly to your audience
+- Ability for users to store/manipulate the data displayed in the application, such as favoriting or adding to a list, searching, commenting, etc
+- Multiple views handled by Router
+- Be deployed using Heroku, Surge, or any other similar service
 
-### `npm run eject`
+## Preview )
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## WinsAndChallenges
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Successfully created a niche app using React
+- Successfully implemented React Router
+- Successfully implemented e2e testing with Cypress
+- Successfully brought in data from an open API
+- Successfully implemented user search filter
+- Successfully taught myself Hooks and implemented them in this project 
+- Successfully used CSS to make the site responsive to different screen sizes for a phone or tablet
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Using an api that allowed me to create my own dataset was extremely useful but also very time consuming. I also had to do a lot of research to find out which books had been banned most in texas. 
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Would have liked to have more time for styling.
 
-### Code Splitting
+## Authors
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+<table>
+   <tr>
+      <td> Josephine Heidepriem <a href="https://github.com/jheidepriem">GH</td>
+    </tr>
+<td><img src="https://avatars.githubusercontent.com/u/108428451?v=4" alt="Josephine Heidepriem"
+ width="150" height="auto" /></td>
+</table>
+  
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
