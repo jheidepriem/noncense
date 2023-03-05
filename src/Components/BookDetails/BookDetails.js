@@ -1,13 +1,10 @@
-import { useState } from "react";
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 import "../BookDetails/BookDetails.css";
 
 const BookDetails = ({ bookData }) => {
-  const [Loading, setLoading] = useState(false);
   return (
     <main className="book-details-container">
-      {Loading && <h1>Loading...</h1>}
       <section className="book-cover-section">
         <img
           className="large-cover"

@@ -63,6 +63,8 @@ const App = () => {
               <Fragment>
                 <Header />
                 <BookDetails bookData={findBook} id={match.params.id} />
+                {Loading && <h1>Loading...</h1>}
+                {error && <Error/> }
               </Fragment>
             );
           }}
