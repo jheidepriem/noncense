@@ -16,7 +16,7 @@
   - [Authors](#Authors)
 
 ## Setup
-  - Clone down this repo here
+  - Clone down this repo [here](https://github.com/jheidepriem/noncense)
   - On the command line, type: $ npm intall
   - On the command line, type: $ npm start
   - Open http://localhost:3000 to view it in your browser.
