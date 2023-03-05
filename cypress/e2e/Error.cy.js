@@ -8,14 +8,10 @@ describe("about page", () => {
     cy.visit("http://localhost:3000/librarydfdfd");
   });
 
-  it("should go to an error page if the library path is not found", () => {
-    cy.visit("http://localhost:3000/librarydfdfd");
-  });
-
   it("should display all elements on error page", () => {
-    cy.get("h1").should("be.visible");
-    cy.get("h2").should("be.visible");
-    cy.get(".link").should("be.visible");
+    cy.get("h1").should("be.visible").contains("404 Error");
+    cy.get("h2").should("be.visible").contains("Page Not Found");
+    cy.get(".link").should("be.visible").contains("Go Home");
   });
 
   it("should go back to the home page if the link is clicked", () => {
