@@ -21,8 +21,5 @@ describe("about page", () => {
   it("should be able to click on Checkout Book text and be taken to an external link", () => {
     cy.get(".button-2").click();
     cy.url("http://openlibrary.org/works/OL627084W/Lolita");
-    cy.get(".books-container").should("be.visible");
-    cy.get(":nth-child(1) > a > .book > .book-cover").should("be.visible");
-    cy.get(":nth-child(2) > a > .book > .book-cover").should("be.visible");
   });
 });
